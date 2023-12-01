@@ -56,8 +56,9 @@ main>.galaxy {
 }
 
 .galaxy div {
-    width: 35rem;
-    height: 448px;
+    width: fit-content;
+    height: fit-content;
+    min-height: 516px;
 
     border-radius: .8rem;
     border: .2rem solid #323238;
@@ -68,8 +69,8 @@ main>.galaxy {
 }
 
 .galaxy1 img {
-    width: 34.6rem;
-    height: 17.7rem;
+    width: fit-content;
+    height: fit-content;
 
     padding-bottom: 2.4rem;
     border-radius: .8rem .8rem 0 0;
@@ -146,7 +147,8 @@ main>.galaxy {
 
     .galaxy div {
         width: fit-content;
-        height: 500px;
+    height: fit-content;
+    min-height: 516px;
     }
 
     .galaxy1 img {
@@ -182,6 +184,7 @@ main>.galaxy {
     }
     .galaxy1 #id-5{
         grid-area: galaxy5;
+        
     }
     .galaxy1 #id-6{
         grid-area: galaxy6;
