@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: rgba(18, 18, 20, 1);
+}
+
+main {
+    height: 100vh;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+h1 {
+    color: #02799D;
+    font-size: 58.287px;
+    font-weight: 900;
+
+    font-size: clamp(2.5rem, 2wv + 4rem, 5.8287rem);
+    line-height: clamp(normal, normal + 2vw, normal + 2.5vw);
+}
+
+main > p {
+    color: #E1E1E6;
+    font-size: 32px;
+    font-weight: 600;
+
+  
+    margin-bottom: 63px;
+}
+
+main>.galaxy {
+    display: grid;
+
+    grid-template:
+        "galaxy1" 1fr
+        "galaxy2" 1fr
+        "galaxy3" 1fr
+        "galaxy4" 1fr
+        "galaxy5" 1fr
+        "galaxy6" 1fr / 1fr ;
+
+    row-gap: 2rem;
+    column-gap: 3rem;
+    justify-items: center;
+}
+
+.galaxy div {
+    width: 35rem;
+    height: fit-content;
+
+    border-radius: .8rem;
+    border: .2rem solid #323238;
+    background: #202024;
+    
+
+    justify-items: center;
+}
+
+.galaxy1 img {
+    width: 34.6rem;
+    height: 17.7rem;
+
+    padding-bottom: 2.4rem;
+    border-radius: .8rem .8rem 0 0;
+}
+
+.galaxy1 h2 {
+    color: #E1E1E6;
+    font-size: 3.5302rem;
+    font-weight: 900;
+    padding: 0 2.4rem 2.4rem 2.4rem;
+}
+
+.galaxy1 p {
+    color: #C4C4CC;
+    font-size: 1.9381rem;
+    font-weight: 600;
+
+    width: 36.6rem;
+    margin-top: 0;
+    padding: 0 2.4rem 2.4rem 2.4rem;
+}
+
+.galaxy1 {
+    transition: transform 0.25s ease-in-out;
+}
+
+.galaxy1:hover {
+    transform: scale(1.02);
+}
+
+.galaxy1 #id-1{
+    grid-area: galaxy1;
+}
+
+.galaxy1 #id-2{
+    grid-area: galaxy2;
+}
+.galaxy1 #id-3{
+    grid-area: galaxy3;
+}
+.galaxy1 #id-4{
+    grid-area: galaxy4;
+}
+.galaxy1 #id-5{
+    grid-area: galaxy5;
+}
+.galaxy1 #id-6{
+    grid-area: galaxy6;
+}
+
+
+@media (min-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+    main {
+        padding: 53px 70px 70px 70px;
+
+        justify-items: center;
+    }
+    
+    h1{
+        width: 58.4rem;
+    }
+
+    main>.galaxy {
+        display: grid;
+    
+        grid-template:
+            "galaxy1 galaxy2" 1fr 
+            "galaxy3 galaxy4" 1fr 
+            "galaxy5 galaxy6" 1fr  / 1fr 1fr ;
+    }
+
+    .galaxy div {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .galaxy1 img {
+        width: fit-content;;
+        height: 17.7rem;
+    }
+
+    .galaxy1 h2 {
+        font-size: 26px;
+    }
+
+    .galaxy1 p {
+        font-size: 1.9381rem;
+
+        width: 31.6rem;
+
+        padding: 0 1.8rem 1.8rem 1.8rem;
+    }
+
+    .galaxy1 #id-1{
+        grid-area: galaxy1;
+    }
+    
+    .galaxy1 #id-2{
+        grid-area: galaxy2;
+    }
+    .galaxy1 #id-3{
+        grid-area: galaxy3;
+    }
+    .galaxy1 #id-4{
+        grid-area: galaxy4;
+    }
+    .galaxy1 #id-5{
+        grid-area: galaxy5;
+    }
+    .galaxy1 #id-6{
+        grid-area: galaxy6;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    main {
+        padding: 73px 100px 100px 100px;
+
+        justify-items: center;
+    }
+
+    main>.galaxy {
+        display: grid;
+    
+        grid-template:
+            "galaxy1 galaxy2 galaxy3" 1fr  
+            "galaxy4 galaxy5 galaxy6" 1fr  / 1fr 1fr 1fr ;
+    }
+
+    .galaxy div {
+        width: fit-content;
+        height: fit-content;
+
+        gap: 6rem;
+    }
+
+    .galaxy1 img {
+        width: 36.6rem;
+        height: 17.7rem;
+    }
+
+    .galaxy1 p {     
+        font-size: 1.9381rem;
+
+        width: 32.1rem;
+        height: fit-content;
+
+        padding: 0 3.2rem 3.2rem 3.2rem;
+    }
+
+    .galaxy1 #id-1{
+        grid-area: galaxy1;
+    }
+    
+    .galaxy1 #id-2{
+        grid-area: galaxy2;
+    }
+    
+    .galaxy1 #id-3{
+        grid-area: galaxy3;
+    }
+
+    .galaxy1 #id-4{
+        grid-area: galaxy4;
+    }
+
+    .galaxy1 #id-5{
+        grid-area: galaxy5;
+    }
+
+    .galaxy1 #id-6{
+        grid-area: galaxy6;
+    }
+}
